@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+   font-family: 'Roboto Condensed', sans-serif;
+   margin: 0;
+   background: #eee;
+   height: auto;
+   box-sizing: border-box;
+}
+
+h1 {
+   font-weight: 400;
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   margin: 0;
+}
+
+h2 {
+   font-weight: 400;
+   font-size: 1.2rem;
+   text-transform: capitalize;
+   margin: 0;
+
+}
+
+img {
+   display: block;
+   width: 100%;
+}
+
+main {
+   max-width: 900px;  /* for full screen - take this off*/
+   margin: auto; /* content is in the middle because of this*/
+   box-shadow: 30px 0 40px rgba(0, 0, 0, .1), -30px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.landing {
+   background: #fff;
+}
+
+.landing-text {
+   display: flex;
+   flex: 0 1 40vw; /* to take 40 vw of screen */
+   height: 50vh;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-right: 1rem;
+   padding-left: 1rem;
+}
+
+.landing-text h2 {
+   color: #888; /* grey */
+}
+
+/* landing image is image id from unsplash.com but link to put fixed photo is from source.unsplash.com */
+.landing-image {
+   background: url(https://source.unsplash.com/wQImoykAwGs);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 50vh;
+   flex: 0 1  60vw;
+   margin: 0;
+}
+
+.button {
+   padding: 0.5rem 2rem;
+   border: 1px solid #ccc;
+   display: inline-block; /* a is inline element, so you need to change it to manipulate properly */
+   margin: 2rem 0 0;
+   border-radius: 50px;
+   text-decoration: none;
+   color: #333;
+   transition: all .4s ease;
+}
+
+.button:hover {
+   background: #f4f4f4;
+}
+
+.header {
+   padding: 1.5rem;
+   text-align: center;
+   background: #333;
+   color: #fff;
+}
+
+.header h2 {
+   border-left: dotted 1px #fff;
+   border-right: dotted 1px #fff;
+   display: inline-block;
+   padding-right: 1rem;
+   padding-left: 1rem;
+}
+
+.caption {
+   padding: .8rem;
+   text-align: center;
+}
+
+footer {
+   text-align: center;
+   padding: 2rem 1rem;
+   margin: auto;
+   color: #333;
+}
+
+footer h3 {
+   font-size: 3rem;
+   margin-bottom: 0;
+}
+
+/* screen sizes 500px and up */
+
+@media (min-width: 500px) { /* css will kick in if it's more than 500 px. max-width - under 500px. min, because mobile-first design. */
+   .landing {
+      display: flex;
+      height: 100%; /* does not fill full height, need items inside content to have some height properties */
+   }
+
+   .landing-text {
+      height: 100vh;
+   }
+
+   .landing-image {
+      height: 100vh;
+   }
+}
+
+/* Screen sizes 700px and up */
+
+@media(min-width: 700px) {
+   .button {
+      padding: 1rem 3rem;
+   }
+
+   /* main {
+      max-width: 100%;
+   } */
+}

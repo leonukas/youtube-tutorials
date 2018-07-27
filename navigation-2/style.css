@@ -1,0 +1,96 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+
+body {
+   font-family: sans-serif;
+   margin: 0;
+   background-image: linear-gradient(to left, grey 100%, darkgrey 0%);
+}
+
+a, i{
+   color: #fff;
+   font-weight: 100;
+   letter-spacing: 2px;
+   text-decoration: none;
+   background: rgba(0, 0, 0, .2);
+   padding: 20px;
+   display: inline-block;
+   width: 100%;
+   text-align: center;
+   transition: all .5s;
+}
+
+a:hover,
+i:hover {
+   background: rgba(0, 0, 0, .3);
+}
+
+.social {
+   font-size: 1rem;
+}
+
+.wrapper {
+   max-width: 100%;
+   margin: 0;
+   padding: 50px;
+}
+
+/* Flex container */
+.flex-nav ul {
+   border: 1px solid black;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+
+}
+
+.flex-nav li {
+   flex: 3; /* take three times the amount of social */
+}
+
+/* .flex-nav .social {
+   flex: 1;
+} */
+
+
+@media all and (max-width: 1000px) {
+
+   .flex-nav ul {
+      flex-wrap: wrap;
+   }
+
+   .flex-nav li {
+
+      flex: 1 1 50%;
+   }
+
+   .flex-nav .social {
+      flex: 1 1 25%;
+   }
+}
+
+@media all and (max-width: 536px ) {
+
+   .flex-nav li {
+      flex-basis: 100%;
+      /* flex: 1 1 100%; */
+   }
+}
+
+
+
+
+
+
+
+
+
+.

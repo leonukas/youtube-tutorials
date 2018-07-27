@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- https://www.youtube.com/watch?v=P0hPSOpHa8E -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <title>Navigation Bar</title>
+   <script>
+      $(document).ready(function() {
+         $(".mob-btn .fa-times").hide();
+
+         $(".mob-btn .fa-bars").click(function(){
+            $(this).hide();
+            $(".mob-btn .fa-times").show();
+            $(".mob .mob-list").addClass("active");
+         });
+
+         $(".mob-btn .fa-times").click(function(){
+            $(this).hide();
+            $(".mob-btn .fa-bars").show();
+            $(".mob .mob-list").removeClass("active");
+         });
+      })
+   </script>
+</head>
+<body>
+ <div class="container">
+
+    <nav class="desk">
+       <ul>
+          <li class="active"><a href="#">home</a></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">maps</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+       </ul>
+    </nav>
+
+    <nav class="mob">
+      <div class="mob-btn">
+         <i class="fas fa-bars"></i>
+         <i class="fas fa-times"></i>
+      </div>
+      <ul class="mob-list">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">maps</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+
+    </header>
+ </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- https://www.youtube.com/watch?v=jV8B24rSN5o -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>CSS grid</title>
+
+   <style>
+
+   .grid-container {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      /* grid-column-gap: 1em;
+      grid-row-gap: 1em; */
+
+      grid-gap: 1em;
+   }
+
+   .grid-container > div {
+      background-color: #eee;
+      padding: 1em;
+   }
+
+   .grid-container >div:nth-child(odd) {
+      background-color: #ddd;
+   }
+
+   </style>
+
+</head>
+<body>
+   <div class="grid-container">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ad, itaque culpa fugiat sit magnam, ex expedita, sunt delectus nisi, quo deserunt. Non quam, amet praesentium tenetur voluptatibus, laudantium nobis cupiditate nisi ut nihil perspiciatis maiores, facere totam velit ipsum deleniti officia. Impedit maxime tempore eveniet ipsum ab dolorum pariatur debitis consequuntur. Fugit earum quisquam distinctio corporis, qui, magnam laudantium ipsum harum debitis laborum repellendus excepturi tempora non numquam quibusdam quo deleniti ab voluptatem voluptate quidem odio error, ad aspernatur.</div>
+
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse magni distinctio eaque placeat dolore accusamus illum voluptatem cum, minima officiis quisquam hic, sit nihil eum. Magni nihil deserunt corrupti.</div>
+
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ad, itaque culpa fugiat sit magnam, ex expedita, sunt delectus nisi, quo deserunt. Non quam, amet praesentium tenetur voluptatibus, laudantium nobis cupiditate nisi ut nihil perspiciatis maiores, facere totam velit ipsum deleniti officia. Impedit maxime tempore eveniet ipsum ab dolorum pariatur debitis consequuntur. Fugit earum quisquam distinctio corporis, qui, magnam laudantium ipsum harum debitis laborum repellendus excepturi tempora non numquam quibusdam quo deleniti ab voluptatem voluptate quidem odio error, ad aspernatur.</div>
+
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum esse magni distinctio eaque placeat dolore accusamus illum voluptatem cum, minima officiis quisquam hic, sit nihil eum. Magni nihil deserunt corrupti.</div>
+   </div>
+
+
+
+
+</body>
+</html>

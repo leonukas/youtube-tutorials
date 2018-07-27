@@ -1,0 +1,112 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+header {
+   background: #00795f;
+   width: 100%;
+   padding: 40px 0;
+   color: white;
+   text-align: center;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+nav ul {
+   background-color: #43a286;
+   overflow: hidden; /* patestuot kaip su overflow: auto;*/
+   color: #fff;
+   padding: 0;
+   text-align: center;
+   margin: 0;  /* pasalina tarpus tarp bloku */
+   -webkit-transition: max-height 0.4s;
+   -moz-transition: max-height 0.4s;
+   -ms-transition: max-height 0.4s;
+   -o-transition: max-height 0.4s;
+   transition: max-height 0.4s;
+}
+
+nav ul li {
+   display: inline-block;
+   padding: 20px;
+
+}
+
+nav ul li:hover {
+   background-color: #399077;
+
+}
+
+section {
+   line-height: 1.5em;
+   font-size: 0.9em;
+   padding: 40px;
+   width: 85%;
+   margin: 0 auto; /* to center */
+   text-align: justify;
+}
+
+.handle {
+   width: 100%;
+   background: #005c48;
+   text-align: center;
+   text-transform: uppercase;
+   box-sizing: border-box;
+   padding: 20px 10px;
+   cursor: pointer;
+   color: #fff;
+   display: none;
+}
+
+@media screen and (max-width: 536px) {
+
+   nav ul {
+      max-height: 0; /* paslepia navigacija - ul aukstis - 0px */
+   }
+
+   .showing {
+      max-height: 25em; /* value - and you can animate it same with 0 */
+   }
+
+   li { /* jei nav ul li - blokai po viena zemyn slenka */
+      width: 100%;
+      box-sizing: border-box; /* if normal sizing model, padding would be included in size. */
+      padding: 15px;
+      border-bottom: .1px solid #fff;
+   }
+
+
+      /* li:last-child {
+      border-bottom: none;     /* !!!!neveikia!!!! nuimt borderi nuo paskutinio elemento sarase
+      }
+   */
+
+   .handle {
+      display: block;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

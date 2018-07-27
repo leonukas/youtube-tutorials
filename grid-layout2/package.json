@@ -1,0 +1,14 @@
+{
+  "name": "grid2",
+  "version": "1.0.0",
+  "description": "for learning",
+  "main": "index.js",
+  "scripts": {
+    "compile:grid2": "node-sass main.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
